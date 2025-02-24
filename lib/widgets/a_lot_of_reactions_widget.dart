@@ -15,7 +15,7 @@ class ALotOfReactionsWidget extends StatelessWidget {
             child: Text(
               "A Lot of Reactions",
               style: TextStyle(
-                fontSize: 26,
+                fontSize: 22,
                 fontWeight: FontWeight.bold,
               ),
             ),

@@ -30,7 +30,8 @@ class CustomBottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: items.map((item) {
           final isSelected = items.indexOf(item) == currentIndex;
-          final isAddPost = items.indexOf(item) == 2; // Check if this is the Add Post item
+          final isAddPost =
+              items.indexOf(item) == 2; // Check if this is the Add Post item
 
           return GestureDetector(
             onTap: () => onTap(items.indexOf(item)),
@@ -38,18 +39,23 @@ class CustomBottomNavBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 if (isAddPost)
-                  Container(
-                    width: 50, // Adjust the size of the circle
-                    height: 50, // Adjust the size of the circle
-                    decoration: BoxDecoration(
-                      color: const Color(0xff2F9675), // Background color of the circle
-                      shape: BoxShape.circle,
-                    ),
-                    child: IconTheme(
-                      data: const IconThemeData(
-                        color: Colors.white, // Icon color inside the circle
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 8.0), // Margin for the round icon
+                    child: Container(
+                      width: 50, // Adjust the size of the circle
+                      height: 50, // Adjust the size of the circle
+                      decoration: BoxDecoration(
+                        color: const Color(
+                            0xff2F9675), // Background color of the circle
+                        shape: BoxShape.circle,
                       ),
-                      child: item.icon,
+                      child: IconTheme(
+                        data: const IconThemeData(
+                          color: Colors.white, // Icon color inside the circle
+                        ),
+                        child: item.icon,
+                      ),
                     ),
                   )
                 else
@@ -58,7 +64,9 @@ class CustomBottomNavBar extends StatelessWidget {
                     height: 30, // Adjust the height as needed
                     child: IconTheme(
                       data: IconThemeData(
-                        color: isSelected ? const Color(0xff2F9675) : Colors.black, // Change icon color if selected
+                        color: isSelected
+                            ? const Color(0xff2F9675)
+                            : Colors.black, // Change icon color if selected
                       ),
                       child: item.icon,
                     ),
@@ -68,7 +76,9 @@ class CustomBottomNavBar extends StatelessWidget {
                   Text(
                     item.label!,
                     style: TextStyle(
-                      color: isSelected ? const Color(0xff2F9675) : Colors.black, // Change label color if selected
+                      color: isSelected
+                          ? const Color(0xff2F9675)
+                          : Colors.black, // Change label color if selected
                       fontSize: 12, // Adjust font size as needed
                     ),
                   ),
