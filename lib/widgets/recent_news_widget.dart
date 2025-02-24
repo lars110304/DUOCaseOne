@@ -5,7 +5,8 @@ class RecentNewsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 16.0), // Added padding for spacing
+      padding:
+          EdgeInsets.symmetric(vertical: 16.0), // Added padding for spacing
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -15,7 +16,7 @@ class RecentNewsWidget extends StatelessWidget {
             child: Text(
               "Recent News",
               style: TextStyle(
-                fontSize: 26,
+                fontSize: 22,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -23,7 +24,7 @@ class RecentNewsWidget extends StatelessWidget {
 
           // Scrollable news cards
           SizedBox(
-            height: 290, // Adjust height based on your needs
+            height: 250, // Adjust height based on your needs
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 10, // Number of news items
@@ -115,7 +116,8 @@ class RecentNewsWidget extends StatelessWidget {
                                 // Comments Section
                                 Row(
                                   children: [
-                                    Icon(Icons.comment, color: Colors.white, size: 18),
+                                    Icon(Icons.comment,
+                                        color: Colors.white, size: 18),
                                     SizedBox(width: 6),
                                     Text(
                                       "${(index + 1) * 5} Comments",
