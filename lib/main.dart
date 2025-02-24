@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Custom Bottom Nav Bar',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'PPTelegraf',
-        scaffoldBackgroundColor: Colors.white
-      ),
+          primarySwatch: Colors.blue,
+          fontFamily: 'PPTelegraf',
+          scaffoldBackgroundColor: Colors.white),
       home: const MainScreen(),
     );
   }
