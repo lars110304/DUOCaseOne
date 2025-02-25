@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../screens/details_page.dart';
 
 class ALotOfReactionsWidget extends StatelessWidget {
   @override
@@ -28,70 +29,81 @@ class ALotOfReactionsWidget extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, index) {
-                return Container(
-                  width: 175,
-                  margin: EdgeInsets.only(
-                    left: index == 0 ? 30 : 4, // 30px margin for the first card
-                  ),
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailsPage(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    width: 175,
+                    margin: EdgeInsets.only(
+                      left:
+                          index == 0 ? 30 : 4, // 30px margin for the first card
                     ),
-                    clipBehavior: Clip.antiAlias,
-                    child: Stack(
-                      children: [
-                        // Background image
-                        Positioned.fill(
-                          child: Image.network(
-                            "https://picsum.photos/200/200?random=$index",
-                            fit: BoxFit.cover,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      clipBehavior: Clip.antiAlias,
+                      child: Stack(
+                        children: [
+                          // Background image
+                          Positioned.fill(
+                            child: Image.network(
+                              "https://picsum.photos/200/200?random=$index",
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                        ),
 
-                        // Green overlay
-                        Positioned.fill(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Color(0xff2F9675).withOpacity(0.3),
-                                  Color(0xff87CFA2).withOpacity(0.3),
-                                ],
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
+                          // Green overlay
+                          Positioned.fill(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Color(0xff2F9675).withOpacity(0.3),
+                                    Color(0xff87CFA2).withOpacity(0.3),
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                ),
                               ),
                             ),
                           ),
-                        ),
 
-                        // Title at the bottom
-                        Positioned(
-                          bottom: 0,
-                          left: 0,
-                          right: 0,
-                          child: Container(
-                            padding: const EdgeInsets.all(16.0),
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.black.withOpacity(0.0),
-                                  Colors.black.withOpacity(0.9),
-                                ],
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
+                          // Title at the bottom
+                          Positioned(
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            child: Container(
+                              padding: const EdgeInsets.all(16.0),
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Colors.black.withOpacity(0.0),
+                                    Colors.black.withOpacity(0.9),
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                ),
                               ),
-                            ),
-                            child: Text(
-                              "New bus stops causing problems $index",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                              child: Text(
+                                "New bus stops causing problems $index",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 );
