@@ -1,4 +1,5 @@
 import 'package:duo_case_one/screens/home_page.dart';
+import 'package:duo_case_one/screens/add_post_page.dart';
 import 'package:flutter/material.dart';
 import 'widgets/custom_bottom_nav_bar.dart'; // Import the custom widget
 
@@ -37,7 +38,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     const HomePage(),
     const Center(child: Text('News Page', style: TextStyle(fontSize: 24))),
-    const Center(child: Text('Add Post Page', style: TextStyle(fontSize: 24))),
+    AddPostPage(),
     const Center(child: Text('Polls Page', style: TextStyle(fontSize: 24))),
     const Center(child: Text('Profile Page', style: TextStyle(fontSize: 24))),
   ];
