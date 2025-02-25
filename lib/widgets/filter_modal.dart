@@ -380,36 +380,6 @@ class _FilterModalState extends State<FilterModal> {
 
                     // Close the modal
                     Navigator.pop(context);
-
-                    // Show the collected filter data in an AlertDialog
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return AlertDialog(
-                          title: Text("Applied Filters"),
-                          content: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                  "Categories: ${selectedCategoryNames.join(', ')}"),
-                              Text("Start Date: $startDate"),
-                              Text("End Date: $endDate"),
-                              Text("Reactions: $reactionsRange"),
-                            ],
-                          ),
-                          actions: <Widget>[
-                            TextButton(
-                              onPressed: () {
-                                Navigator.pop(
-                                    context); // Close the alert dialog
-                              },
-                              child: Text('OK'),
-                            ),
-                          ],
-                        );
-                      },
-                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: buttonColor,
