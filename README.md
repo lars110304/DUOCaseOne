@@ -1,7 +1,5 @@
-# Flutter App README Template
-
-## Project Name
-This Flutter app helps users stay informed and involved in politics. It allows users to read political articles, post comments, get government news updates, and personalize their experience. The app is easy to use and encourages civic discussions.
+# The Neighbourhood App
+The Neighbourhood App makes it easier for people to connect with their local government. It allows citizens to share their concerns, report issues, and stay informed about important updates in their area.
 
 ## Table of Contents
 1. Introduction  
@@ -14,7 +12,9 @@ This Flutter app helps users stay informed and involved in politics. It allows u
 ---
 
 ## Introduction
-This Flutter app is designed to enhance political engagement by providing a comprehensive platform for users to stay informed and actively participate in political discussions. The app enables users to:
+The Neighbourhood App makes it easier for people to connect with their local government. It allows citizens to share their concerns, report issues, and stay informed about important updates in their area.
+With this app, users can create posts to report problems like potholes, broken streetlights, or garbage collection issues. Whether you want to raise concerns or stay updated on community matters, this app helps you stay connected and informed. 
+The app helps users with:
 
 - Read in-depth political articles covering a wide range of topics, including government policies, elections, and community affairs.
 - Post and engage in discussions by commenting on articles, sharing insights, and debating issues with other users.
@@ -72,7 +72,6 @@ lib/
 
 ## Dependencies
 List the main dependencies used in your project with installation instructions.
-Example:
 ```yaml
 dependencies:
   flutter:
