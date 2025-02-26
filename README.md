@@ -68,7 +68,11 @@ Example:
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^6.0.5
-  http: ^0.13.5
+  cupertino_icons: ^1.0.8
+  font_awesome_flutter: ^10.7.0
+  intl: ^0.19.0
+  image_picker: ^1.0.7
+  geolocator: ^11.0.0
+  provider: ^6.1.0
 ```
 
