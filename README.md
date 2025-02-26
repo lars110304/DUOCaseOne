@@ -7,7 +7,8 @@ The Neighbourhood App makes it easier for people to connect with their local gov
 3. Installation  
 4. Usage  
 5. Folder Structure  
-6. Dependencies  
+6. Dependencies
+7. App Video
 
 ---
 
@@ -83,4 +84,7 @@ dependencies:
   geolocator: ^11.0.0
   provider: ^6.1.0
 ```
+
+## App Video
+Add product video of the app here
 
