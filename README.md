@@ -50,7 +50,16 @@ The app offers an intuitive and user-friendly interface, making it easy for both
    ```
 
 ## Usage
-Provide information on how users can navigate and use your app.
+
+- Click the filter button so you can see the filter settings. You can't adjust the settings for now but just imagine you did. 
+- Click the “find” button. And you should be redirected back to the homepage. 
+- On the homepage you can click one of the posts to see more information about that post and you can see what other people have to say about it.  
+- Click the back button on the post page so you can get back to the home page or click the home icon in the navigation bar. 
+- Finally click the “post” button at the bottom of the screen and you will get redirected to a screen where you can see all the post inputs where you can customize your post. 
+- For now, it's just dummy design so imagine that you fill everything in and click the “create” button.  
+- If everything is filled in correctly you will go to the post page and see a modal with a confirmation that the post is posted. 
+- Click the “close” button of the modal
+- Click the “back” button again to finalize this assignment. 
 
 ## Folder Structure
 ```
