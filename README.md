@@ -35,7 +35,7 @@ The app offers an intuitive and user-friendly interface, making it easy for both
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/lars110304/DUOCaseOne.git
    ```
 2. Navigate to the project directory:
    ```sh
