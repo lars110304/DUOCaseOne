@@ -85,6 +85,3 @@ dependencies:
   provider: ^6.1.0
 ```
 
-## App Video
-Add product video of the app here
-
